@@ -6,7 +6,7 @@ class WelcomeScreen extends Component {
     return (
       <View style={styles.container}>
         <Text style={{ marginBottom: 40 }}>This will be a screen that shows a tutorial</Text>
-        <Button title="proceed to auth" onPress={() =>  this.props.navigation.navigate('Main')}/>
+        <Button title="proceed to auth" onPress={() =>  this.props.navigation.navigate('Auth')}/>
       </View>
     )
   }

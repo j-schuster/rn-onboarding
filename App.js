@@ -1,16 +1,16 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { TabNavigator } from 'react-navigation';
-import { Provider } from 'react-redux';
-import store from './store';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+import { TabNavigator } from "react-navigation";
+import { Provider } from "react-redux";
+import store from "./store";
 
-import AuthScreen from './containers/AuthScreen';
-import WelcomeScreen from './containers/WelcomeScreen';
-import EventsScreen from './containers/Events';
-import TicketsScreen from './containers/Tickets';
-import SellScreen from './containers/Sell';
-import GoneScreen from './containers/Gone';
-import ProfileScreen from './containers/Profile';
+import AuthScreen from "./containers/AuthScreen";
+import WelcomeScreen from "./containers/WelcomeScreen";
+import EventsScreen from "./containers/Events";
+import TicketsScreen from "./containers/Tickets";
+import SellScreen from "./containers/Sell";
+import GoneScreen from "./containers/Gone";
+import ProfileScreen from "./containers/Profile";
 
 console.disableYellowBox = true;
 
@@ -30,9 +30,9 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-      <View style={styles.container}>
-        <MainNavigator/>
-      </View>
+        <View style={styles.container}>
+          <MainNavigator />
+        </View>
       </Provider>
     );
   }
@@ -41,9 +41,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-  },
+    backgroundColor: "#fff"
+  }
 });
-
 
 // APP ID: 201895470415022
